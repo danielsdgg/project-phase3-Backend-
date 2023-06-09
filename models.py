@@ -12,6 +12,7 @@ Base = declarative_base()
 class Phone(Base):
     __tablename__ = 'phones'
     id = Column(Integer, primary_key = True)
+    image = Column(String())
     name = Column(String())
     brand = Column(String())
     test_performance = Column(String())
@@ -39,6 +40,7 @@ class Customers(Base):
     fname = Column(String())
     lname = Column(String())
     email = Column(String())
+    message = Column(String())
 
     phones = relationship('Phone', back_populates = 'custom')
 
@@ -58,7 +60,7 @@ class Sales(Base):
     # Phone = relationships('phones', backref='phone_sales')
 
 
-engine = create_engine('sqlite:///app.db')
+engine = create_engine('sqlite:///dan.db')
 Base.metadata.create_all(engine)
 Session = sessionmaker(bind = engine)
 session = Session()

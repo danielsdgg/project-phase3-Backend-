@@ -1,8 +1,8 @@
-"""added customer phone rltshp
+"""update2
 
-Revision ID: 899601259427
-Revises: ed9280940c8d
-Create Date: 2023-06-06 21:52:52.097150
+Revision ID: 93b32ae7b52c
+Revises: 
+Create Date: 2023-06-08 22:42:44.491024
 
 """
 from alembic import op
@@ -10,8 +10,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision = '899601259427'
-down_revision = 'ed9280940c8d'
+revision = '93b32ae7b52c'
+down_revision = None
 branch_labels = None
 depends_on = None
 
